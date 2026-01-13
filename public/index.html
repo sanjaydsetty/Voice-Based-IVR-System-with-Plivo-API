@@ -1,15 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Plivo IVR Demo</title>
+  <meta charset="UTF-8">
+  <title>Voice-Based IVR Demo</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Plivo IVR Demo</h1>
-  <input type="text" id="phone" placeholder="Enter phone number">
-  <button onclick="makeCall()">Call</button>
 
-  <p id="status"></p>
+  <div class="app">
+    <div class="card">
+      <div class="header">
+        <div class="icon">📞</div>
+        <h1>IVR Call Simulator</h1>
+        <p>Trigger an outbound call & experience the IVR flow</p>
+      </div>
+
+      <div class="form">
+        <label>Phone Number</label>
+        <input 
+          type="text" 
+          id="phone" 
+          placeholder="+91XXXXXXXXXX"
+        />
+
+        <button onclick="makeCall()" id="callBtn">
+          Start Call
+        </button>
+
+        <p id="status" class="status"></p>
+      </div>
+
+      <div class="footer">
+        Powered by <strong>Plivo Voice API</strong>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

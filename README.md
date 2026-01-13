@@ -46,10 +46,4 @@ Environment  | dotenv                  |
 
 ---
 
-## ⚙️ Setup Instructions
 
-### 1. Clone the Repository
-
-```bash
-git clone <your-github-repo-url>
-cd plivo-ivr-demo

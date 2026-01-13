@@ -24,26 +24,58 @@ The goal of this project is to showcase real-world API integration, backend call
 ## 🧠 IVR Flow
 
 ### Level 1: Language Selection
-Press 1 → English
-Press 2 → Spanish
+- Press 1 → English  
+- Press 2 → Spanish  
 
 ### Level 2: Based on Language Selection
-Press 1 → Play a short message
-Press 2 → Connect to a live agent
+- Press 1 → Play a short message  
+- Press 2 → Connect to a live agent  
+
+---
+
+
+---
 
 ## 🏗️ Tech Stack
 
-| Layer       | Technology              |
-|------------|--------------------------|
-Frontend     | HTML, CSS, JavaScript   |
-Backend      | Node.js, Express        |
-Voice API    | Plivo                   |
-Tunneling    | ngrok                   |
-Environment  | dotenv                  |
+| Layer       | Technology            |
+|------------|------------------------|
+| Frontend   | HTML, CSS, JavaScript |
+| Backend    | Node.js, Express      |
+| Voice API  | Plivo                 |
+| Tunneling  | ngrok                 |
+| Environment| dotenv                |
 
 ---
 
+## ⚙️ Setup Instructions
 
----
+### 1. Clone the repository
+```bash
+git clone https://github.com/sanjaydsetty/Voice-Based-IVR-System-with-Plivo-API.git
+cd plivo-ivr-demo
+```
 
+### 2. Install Dependencies
+```bash
+npm install
+```
 
+### 3. Configure environment variables
+```bash
+PLIVO_AUTH_ID=your_auth_id
+PLIVO_AUTH_TOKEN=your_auth_token
+PLIVO_FROM_NUMBER=your_plivo_number
+AGENT_NUMBER=your_phone_number
+BASE_URL=your_ngrok_url
+```
+
+### 4. Start the server
+```bash
+npm start
+```
+
+### 5. Run ngrok
+```bash
+ngrok http 3000
+```
